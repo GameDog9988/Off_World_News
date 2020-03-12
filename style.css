@@ -118,9 +118,8 @@ footer ul li a {
     grid-row: 1 / 3;
     margin: auto;
     justify-self: center;
-    align-self: center;
+    align-self: start;
     padding: 3em;
-    width: 700px;
   }
 
   main img {
@@ -130,19 +129,17 @@ footer ul li a {
   .item-b {
     grid-column: 3 / 5;
     grid-row: 1 / 2;
+    margin: auto;
     justify-self: center;
     align-self: center;
-    width: 400px;
-    height: 300px;
   }
 
   .item-c {
     grid-column: 3 / 5;
     grid-row: 2 / 3;
+    margin: auto;
     justify-self: center;
     align-self: center;
-    width: 400px;
-    height: 400px;
   }
 
   p {
@@ -163,6 +160,8 @@ footer ul li a {
     align-self: end;
   }
 
+  .item-b img,
+  .item-c img,
   .secondary-items img {
     max-width: 225px;
     height: auto;
