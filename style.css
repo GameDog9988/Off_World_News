@@ -21,6 +21,7 @@ body {
   font-family: Blade Runner;
   text-align: center;
   font-size: 2.5em;
+  margin: 0.5em 0 0 0;
 }
 
 .main-container {
@@ -45,6 +46,11 @@ body {
   color: white;
 }
 
+hr {
+  display: block;
+  width: 200px;
+}
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -60,7 +66,7 @@ nav ul li a h4 {
   margin: 1em;
 }
 
-nav ul li a:before {
+nav ul li a h4:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -75,7 +81,7 @@ nav ul li a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-nav ul li a:hover:before {
+nav ul li a h4:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -133,7 +139,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5em;
+  margin: 2em;
   flex-wrap: wrap;
 }
 
@@ -142,7 +148,7 @@ p {
   flex-basis: 25%;
   margin: 2em;
 }
-.flex-container section img {
+.flex-container section a img {
   border-radius: 15px;
   height: 200px;
 }
@@ -198,7 +204,10 @@ footer ul li a:hover:before {
 }
 
 .ad-quote {
+  display: block;
   font-style: italic;
+  margin: 1em;
+  font-size: 0.8em;
 }
 
 @media screen and (min-width: 1600px) {
@@ -264,6 +273,10 @@ footer ul li a:hover:before {
 }
 
 @media screen and (max-width: 880px) {
+  .title {
+    font-size: 2.2em;
+  }
+
   h3 {
     font-size: 1em;
   }
@@ -272,6 +285,19 @@ footer ul li a:hover:before {
 @media screen and (max-width: 650px) {
   .title {
     font-size: 1.6em;
+    margin-bottom: 0.5em;
+  }
+
+  hr {
+    width: 150px;
+  }
+
+  .ad-quote {
+    display: none;
+  }
+
+  nav ul {
+    margin: 0;
   }
 
   nav ul li a {
@@ -283,7 +309,7 @@ footer ul li a:hover:before {
     font-size: 0.9em;
   }
 
-  .flex-container section img {
+  .flex-container section a img {
     width: 350px;
     height: auto;
   }
