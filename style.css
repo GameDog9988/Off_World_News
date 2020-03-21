@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
@@ -258,15 +262,18 @@ footer ul li a:hover:before {
   }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1600px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
+    width: 55%;
   }
 
   main {
     grid-column: 1 / 3;
   }
+}
 
+@media screen and (max-width: 1180px) {
   h3 {
     font-size: 1.2em;
   }
@@ -279,6 +286,10 @@ footer ul li a:hover:before {
 
   h3 {
     font-size: 1em;
+  }
+
+  .grid-container {
+    width: 75%;
   }
 }
 
@@ -304,9 +315,13 @@ footer ul li a:hover:before {
     font-size: 0.9em;
   }
 
+  .grid-container {
+    width: 90%;
+  }
+
   footer ul li a {
     margin: 1em;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .flex-container section a img {
