@@ -340,6 +340,10 @@ footer ul li a:hover:before {
     font-size: 1.2em;
   }
 
+  p {
+    display: none;
+  }
+
   h3 {
     font-size: 0.9em;
   }
