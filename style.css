@@ -122,7 +122,7 @@ nav ul li a h4:hover:before {
   padding: 1em;
 }
 
-p {
+.subhead {
   display: none;
 }
 
@@ -166,9 +166,14 @@ p {
   border-radius: 15px;
 }
 
+.story {
+  text-align: left;
+}
+
 .byline {
   display: block;
   font-weight: bold;
+  text-align: center;
 }
 
 .footer-container {
@@ -262,7 +267,7 @@ footer ul li a:hover:before {
     align-self: center;
   }
 
-  p {
+  .subhead {
     display: inline;
   }
 
@@ -294,7 +299,7 @@ footer ul li a:hover:before {
     font-size: 1.8em;
   }
 
-  p {
+  .subhead {
     display: block;
     padding: 0.5em;
   }
