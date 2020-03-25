@@ -164,6 +164,7 @@ nav ul li a h4:hover:before {
 
 .story-container img {
   border-radius: 15px;
+  width: 350px;
 }
 
 .story {
