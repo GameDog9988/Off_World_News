@@ -28,21 +28,58 @@ body {
   margin: 0.5em 0 0 0;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
 .main-container {
   min-height: 100%;
 }
 
 .header-container {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(130, 20, 87, 1) 100%
-  );
+  background: linear-gradient(0deg, #000000, #821457);
+  background-size: 175% 175%;
   color: white;
   padding: 0.8em;
   border-radius: 0 0 100px 100px;
   background-clip: padding-box;
+  -webkit-animation: GradientAnimation 8s ease infinite;
+  -moz-animation: GradientAnimation 8s ease infinite;
+  animation: GradientAnimation 8s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes GradientAnimation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes GradientAnimation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 .header-container a {
@@ -98,10 +135,8 @@ nav ul li a h4:hover:before {
   grid-gap: 1.5em;
   height: auto;
   width: 75%;
-  margin: 2em auto 2em auto;
-  padding-bottom: 25px;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin: 1em auto 1em auto;
+  padding: 1em 4em 6em 4em;
   overflow: auto;
 }
 
@@ -113,6 +148,10 @@ nav ul li a h4:hover:before {
 .grid-container a {
   text-decoration: none;
   color: black;
+}
+
+.grid-container h3 {
+  font-weight: bolder;
 }
 
 .main-story,
@@ -127,13 +166,32 @@ nav ul li a h4:hover:before {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  box-shadow: 0 1.8px 3.6px -25px rgba(0, 0, 0, 0.6),
+    0 5px 10px -25px rgba(0, 0, 0, 0.391),
+    0 12.1px 24.1px -25px rgba(0, 0, 0, 0.3),
+    0 40px 80px -25px rgba(0, 0, 0, 0.209);
+
   border-radius: 15px;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.8px 3.6px -25px rgba(0, 0, 0, 0.3),
+    0 5px 10px -25px rgba(0, 0, 0, 0.195),
+    0 12.1px 24.1px -25px rgba(0, 0, 0, 0.15),
+    0 40px 80px -25px rgba(0, 0, 0, 0.105);
+  transform: scale(1.03, 1.03);
+}
+
+.story-card {
+  background: white;
+  box-shadow: 0 1.8px 3.6px -25px rgba(0, 0, 0, 0.6),
+    0 5px 10px -25px rgba(0, 0, 0, 0.391),
+    0 12.1px 24.1px -25px rgba(0, 0, 0, 0.3),
+    0 40px 80px -25px rgba(0, 0, 0, 0.209);
+
+  border-radius: 15px;
 }
 
 .flex-container {
@@ -178,17 +236,16 @@ nav ul li a h4:hover:before {
 }
 
 .footer-container {
-  background: rgb(130, 20, 87);
-  background: linear-gradient(
-    0deg,
-    rgba(130, 20, 87, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: linear-gradient(0deg, #821457, #000000);
+  background-size: 175% 175%;
   padding: 1em;
   position: relative;
   clear: both;
   border-radius: 100px 100px 0 0;
   background-clip: padding-box;
+  -webkit-animation: GradientAnimation 8s ease infinite;
+  -moz-animation: GradientAnimation 8s ease infinite;
+  animation: GradientAnimation 8s ease infinite;
 }
 
 footer ul {
@@ -323,6 +380,7 @@ footer ul li a:hover:before {
 
   .grid-container {
     width: 75%;
+    padding: 1em 2em 6em 2em;
   }
 
   .main-story h3 {
@@ -362,7 +420,8 @@ footer ul li a:hover:before {
   }
 
   .grid-container {
-    width: 90%;
+    width: 85%;
+    margin-top: 0.05em;
   }
 
   .main-story h3 {
