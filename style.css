@@ -37,8 +37,8 @@ h1 {
 }
 
 .header-container {
-  background: linear-gradient(0deg, #000000, #821457);
-  background-size: 175% 175%;
+  background: linear-gradient(0deg, #000000, #d02887);
+  background-size: 200% 200%;
   color: white;
   padding: 0.8em;
   border-radius: 0 0 100px 100px;
@@ -236,7 +236,7 @@ nav ul li a h4:hover:before {
 }
 
 .footer-container {
-  background: linear-gradient(0deg, #821457, #000000);
+  background: linear-gradient(0deg, #d02887, #000000);
   background-size: 175% 175%;
   padding: 1em;
   position: relative;
