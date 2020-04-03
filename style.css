@@ -424,6 +424,7 @@ footer ul li a:hover:before {
   .grid-container {
     width: 85%;
     margin-top: 0.05em;
+    padding: 0.5em 2em 4.8em 2em;
   }
 
   .main-story h3 {
