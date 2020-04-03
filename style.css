@@ -416,7 +416,7 @@ footer ul li a:hover:before {
   }
 
   nav ul li a {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .grid-container {
@@ -444,5 +444,17 @@ footer ul li a:hover:before {
   .flex-container section a img {
     width: 350px;
     height: auto;
+  }
+
+  .story-container {
+    width: 85%;
+  }
+
+  .story-container h1 {
+    font-size: 2em;
+  }
+
+  .story-container img {
+    width: 300px;
   }
 }
