@@ -10,6 +10,11 @@ A news site for the fictional Off World Colonies from my favorite movies of all 
 ## Why did I make this?
 I wanted to experiment with CSS Grid and how it could organize a news site, especially one for a futuristic fictional location such as the Off World Colonies in Blade Runner.
 
+## Tools Used
+- HTML
+- CSS
+- Netlify
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
